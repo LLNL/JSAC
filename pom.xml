@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>gov.llnl.gnem</groupId>
+    <artifactId>jsac-os</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+
+    <organization>
+        <name>Lawrence Livermore National Laboratory (LLNL)</name>
+        <url>http://www.llnl.gov</url>
+    </organization>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+        <!-- Build plugin versions -->
+        <maven.dependency.plugin.version>3.2.0</maven.dependency.plugin.version>
+        <maven.surefire.plugin.version>3.0.0-M6</maven.surefire.plugin.version>
+        <maven.shade.plugin.version>3.3.0</maven.shade.plugin.version>
+        <maven.buildnumber.version>3.0.0</maven.buildnumber.version>
+        <maven.jar.plugin.version>3.2.2</maven.jar.plugin.version>
+        <maven.compiler.plugin.version>3.10.1</maven.compiler.plugin.version>
+        <license.plugin.version>2.0.0</license.plugin.version>
+
+        <!-- Standard dependencies -->
+        <cct.version>1.0.19</cct.version>
+        <dftt.version>2.0.2</dftt.version>
+        <response.version>1.0</response.version>
+
+        <!-- Test dependencies -->
+        <hamcrest.version>2.2</hamcrest.version>
+        <junit.version>5.8.2</junit.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>gov.llnl.gnem.apps.coda.common</groupId>
+            <artifactId>mapping</artifactId>
+            <version>${cct.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>gov.llnl.gnem</groupId>
+            <artifactId>detection-framework-opensource</artifactId>
+            <version>${dftt.version}</version>
+            <exclusions>
+                <!-- We get these from Response -->
+                <exclusion>
+                    <groupId>edu.iris.dmc</groupId>
+                    <artifactId>IRIS-WS</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+                <exclusion> 
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+                <exclusion>
+                	<groupId>com.oregondsp</groupId>
+                	<artifactId>OregonDSP</artifactId>
+                </exclusion>
+                <exclusion>
+                	<groupId>edu.sc.seis</groupId>
+                	<artifactId>seisFile</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>gov.llnl.gnem</groupId>
+            <artifactId>response</artifactId>
+            <version>${response.version}</version>
+            <type>jar</type>
+            <exclusions>
+            	<exclusion>
+            		<groupId>ch.qos.logback</groupId>
+            		<artifactId>logback-classic</artifactId>
+            	</exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- Test dependencies -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-core</artifactId>
+            <version>${hamcrest.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.plugin.version}</version>
+            </plugin>
+            <!-- create uber-jar so we can execute java -cp with our one
+                        produced 
+            jar -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>${maven.shade.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <filters>
+                                <filter>
+                                    <artifact>*:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/*.SF</exclude>
+                                        <exclude>META-INF/*.DSA</exclude>
+                                        <exclude>META-INF/*.RSA</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
+                            <!--Additional configuration. -->
+                            <transformers>
+                                <transformer
+                                    implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
+                                <transformer
+                                    implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>gov.llnl.gnem.jsac.MainClass</mainClass>
+                                </transformer>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <version>${license.plugin.version}</version>
+                <configuration>
+                    <!-- There are other options available as this tool can add
+                                        license 
+                    headers to your files -->
+                    <addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
+                    <failOnMissingHeader>false</failOnMissingHeader>
+                    <failOnNotUptodateHeader>false</failOnNotUptodateHeader>
+                    <inceptionYear>2022</inceptionYear>
+                    <organizationName>Lawrence Livermore National Laboratory</organizationName>
+                    <licenseName>apache_v2</licenseName>
+                    <descriptionTemplate>${basedir}/src/license/DescriptionTemplate.ftl</descriptionTemplate>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>default-cli</id>
+                        <configuration>
+                            <licenseMerges>
+                                <licenseMerge>The Apache Software License,
+                                    Version 2.0|Apache
+                                    Public License 2.0</licenseMerge>
+                                <licenseMerge>The Apache Software License,
+                                    Version
+                                    2.0|Apache-2.0</licenseMerge>
+                                <licenseMerge>The Apache Software License,
+                                    Version 2.0|Apache 2</licenseMerge>
+                                <licenseMerge>The Apache Software License,
+                                    Version 2.0|Apache v2</licenseMerge>
+                                <licenseMerge>The Apache Software License,
+                                    Version 2.0|Apache
+                                    2.0 License</licenseMerge>
+                                <licenseMerge>The Apache Software License,
+                                    Version 2.0|Apache
+                                    License Version 2.0</licenseMerge>
+                                <licenseMerge>The Apache Software License,
+                                    Version 2.0|Apache
+                                    License 2.0</licenseMerge>
+                                <licenseMerge>The Apache Software License,
+                                    Version 2.0|Apache
+                                    License, Version 2.0</licenseMerge>
+                            </licenseMerges>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>${maven.jar.plugin.version}</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                        </manifest>
+                        <manifestEntries>
+                            <Implementation-Version>${project.version}</Implementation-Version>
+                            <Build-Branch>${scmBranch}</Build-Branch>
+                            <Build-Timestamp>${maven.build.timestamp}</Build-Timestamp>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven.surefire.plugin.version}</version>
+                <configuration>
+                    <reuseForks>false</reuseForks>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

@@ -1,0 +1,4 @@
+/target/
+/nbproject/
+*.log
+dependency-reduced-pom.xml

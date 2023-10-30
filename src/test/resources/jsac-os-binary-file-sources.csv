@@ -1,0 +1,137 @@
+File,Source of data (Providence of file)
+,
+./src/main/resources/gov/llnl/gnem/jsac/commands/seismogram.sac,"Station CDV record from the original SAC2000 https://github.com/LLNL/SAC2000/tree/main/misc/datagen/local , used to generate seismograms when using ""funcgen seismogram"" command"
+./src/main/resources/gov/llnl/gnem/jsac/commands/seismogram.txt,sacalpha version of seismogram.sac
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/addf2p2OneTruth.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/addf2p2TwoTruth.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/addf3p1OneTruth.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/addf3p1ThreeTruth.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/addf3p1TwoTruth.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/divf2p2OneTruth.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/divf2p2TwoTruth.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/divf3p1OneTruth.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/divf3p1ThreeTruth.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/divf3p1TwoTruth.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/file1.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/file2.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/file3.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/file3Plus1.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/file4.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/file4Plus1.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/mulf2p2OneTruth.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/mulf2p2TwoTruth.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/mulf3p1OneTruth.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/mulf3p1ThreeTruth.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/mulf3p1TwoTruth.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/subf2p2OneTruth.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/subf2p2TwoTruth.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/subf3p1OneTruth.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/subf3p1ThreeTruth.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/binary/subf3p1TwoTruth.sac,Generated from triangle.sac using SAC code
+./src/test/resources/gov/llnl/gnem/jsac/commands/dataFile/file1.sac,FUNCGEN IMPULSE
+./src/test/resources/gov/llnl/gnem/jsac/commands/dataFile/file2.sac,FUNCGEN TRIANGL
+./src/test/resources/gov/llnl/gnem/jsac/commands/dataFile/file3.sac,FUNCGEN BOXCAR
+./src/test/resources/gov/llnl/gnem/jsac/commands/dataFile/file4.sac,FUNCGEN TRIANGL
+./src/test/resources/gov/llnl/gnem/jsac/commands/filtering/bpChebyshev2Truth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/filtering/brChebyshev2Truth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/filtering/hpChebyshev1Truth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/filtering/hpChebyshev2Truth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/filtering/lpBesselTruth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/filtering/lpChebyshev1Truth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/filtering/lpChebyshev2Truth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/filtering/whitenCommonTruth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/filtering/whitenTruth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/funcgenSeismogram.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/graphicsAction/eventfile.txt,why these coordinates were picked?
+./src/test/resources/gov/llnl/gnem/jsac/commands/iftypes/amphPhase.sac,amplitude phase version of seismogram.sac
+./src/test/resources/gov/llnl/gnem/jsac/commands/iftypes/impulse_amp_phase.txt,FUNCGEN IMPULSE
+./src/test/resources/gov/llnl/gnem/jsac/commands/iftypes/itime.even.txt,FUNCGEN IMPULSE
+./src/test/resources/gov/llnl/gnem/jsac/commands/iftypes/itime.uneven.sac,FUNCGEN
+./src/test/resources/gov/llnl/gnem/jsac/commands/iftypes/itime.uneven.txt,FUNCGEN
+./src/test/resources/gov/llnl/gnem/jsac/commands/iftypes/ixy.sac,FUNCGEN sta Q
+./src/test/resources/gov/llnl/gnem/jsac/commands/iftypes/realImag.txt,FUNCGEN IMPULSE
+./src/test/resources/gov/llnl/gnem/jsac/commands/iftypes/rlim_test.im.txt,FUNCGEN IMPULSE
+./src/test/resources/gov/llnl/gnem/jsac/commands/iftypes/rlim_test.rl.txt,FUNCGEN IMPULSE
+./src/test/resources/gov/llnl/gnem/jsac/commands/impulse.sac,"Generated from ""funcgen impulse"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/inverseTriangle.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/merge/merge1.sac,Snippet cut from RIYD data
+./src/test/resources/gov/llnl/gnem/jsac/commands/merge/merge2.sac,Snippet cut from RIYD data
+./src/test/resources/gov/llnl/gnem/jsac/commands/merge/merge3.sac,Snippet cut from RIYD data
+./src/test/resources/gov/llnl/gnem/jsac/commands/merge/RIYD.BHE.0_300.sac,https://service.iris.edu/fdsnws/dataselect/1/query?net=XI&sta=RIYD&cha=BHE&start=1997-02-28T12:57:20.680&end=1997-02-28T13:03:20.680&format=sac.zip
+./src/test/resources/gov/llnl/gnem/jsac/commands/merge/RIYD.BHE.1000_1500.sac,https://ds.iris.edu/mda/XI/#XI_1995-01-01_1997-12-31
+./src/test/resources/gov/llnl/gnem/jsac/commands/merge/RIYD.BHE.290_600.sac,https://ds.iris.edu/mda/XI/#XI_1995-01-01_1997-12-31
+./src/test/resources/gov/llnl/gnem/jsac/commands/merge/RIYD.BHE.610_1000.sac,https://ds.iris.edu/mda/XI/#XI_1995-01-01_1997-12-31
+./src/test/resources/gov/llnl/gnem/jsac/commands/random.sac,"Generated from ""funcgen random"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/rotate/RIYD.30.BHE.truth.sac,https://ds.iris.edu/mda/XI/#XI_1995-01-01_1997-12-31
+./src/test/resources/gov/llnl/gnem/jsac/commands/rotate/RIYD.30.BHN.truth.sac,https://ds.iris.edu/mda/XI/#XI_1995-01-01_1997-12-31
+./src/test/resources/gov/llnl/gnem/jsac/commands/rotate/RIYD.BHE.1997059125720,https://ds.iris.edu/mda/XI/#XI_1995-01-01_1997-12-31
+./src/test/resources/gov/llnl/gnem/jsac/commands/rotate/RIYD.BHE.GCP.reversed.sac,https://ds.iris.edu/mda/XI/#XI_1995-01-01_1997-12-31
+./src/test/resources/gov/llnl/gnem/jsac/commands/rotate/RIYD.BHE.GCP.sac,https://ds.iris.edu/mda/XI/#XI_1995-01-01_1997-12-31
+./src/test/resources/gov/llnl/gnem/jsac/commands/rotate/RIYD.BHN.1997059125720,https://ds.iris.edu/mda/XI/#XI_1995-01-01_1997-12-31
+./src/test/resources/gov/llnl/gnem/jsac/commands/rotate/RIYD.BHN.GCP.reversed.sac,https://ds.iris.edu/mda/XI/#XI_1995-01-01_1997-12-31
+./src/test/resources/gov/llnl/gnem/jsac/commands/rotate/RIYD.BHN.GCP.sac,https://ds.iris.edu/mda/XI/#XI_1995-01-01_1997-12-31
+./src/test/resources/gov/llnl/gnem/jsac/commands/seis.bp.c1.n4.c.12_14.tr.5.atten_100.sacalpha,synthetic based on seismogram.sac
+./src/test/resources/gov/llnl/gnem/jsac/commands/seis.bp.n4.c.12_14.sacalpha,synthetic based on seismogram.sac
+./src/test/resources/gov/llnl/gnem/jsac/commands/seis.br.c1.n4.c.12_14.tr.5.atten_100.sacalpha,synthetic based on seismogram.sac
+./src/test/resources/gov/llnl/gnem/jsac/commands/seis.br.n4.c.12_14.sacalpha,synthetic based on seismogram.sac
+./src/test/resources/gov/llnl/gnem/jsac/commands/seis.dif.ref.sacalpha,synthetic based on seismogram.sac
+./src/test/resources/gov/llnl/gnem/jsac/commands/seis.fft.am.sacalpha,synthetic based on seismogram.sac
+./src/test/resources/gov/llnl/gnem/jsac/commands/seis.hp.n4.c.12.sacalpha,synthetic based on seismogram.sac
+./src/test/resources/gov/llnl/gnem/jsac/commands/seis.lp.n4.c.12.sacalpha,synthetic based on seismogram.sac
+./src/test/resources/gov/llnl/gnem/jsac/commands/signalCorrection/interpTruth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/signalCorrection/reverseTruth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/signalCorrection/rmeanTruth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/signalCorrection/rq.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/signalCorrection/rtrendTruth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/signalCorrection/smoothHalfwidth20Truth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/signalCorrection/smoothTruth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/signalCorrection/taperCosineTruth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/signalCorrection/taperHammingTruth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/signalCorrection/taperHannTruth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/signalMeasurement/marktimesDefaultTruth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/signalMeasurement/marktimesDistTruth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/signalMeasurement/marktimesGMTTruth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/signalMeasurement/marktimesVelTruth.sac,"Generated from ""funcgen seismogram"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/spectralAnalysis/divomegaTruth.sac,"Generated from ""funcgen impulse"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/spectralAnalysis/envelopeTruth.sac,"Generated from ""funcgen impulse"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/spectralAnalysis/fftTruth.sac,"Generated from ""funcgen impulse"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/spectralAnalysis/hanningTruth.sac,"Generated from ""funcgen impulse"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/spectralAnalysis/hilbertTruth.sac,"Generated from ""funcgen impulse"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/spectralAnalysis/ifftTruth.sac,"Generated from ""funcgen impulse"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/spectralAnalysis/mulomegaTruth.sac,"Generated from ""funcgen impulse"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/transfer/1993.033.21.MHC.BHZ.--.6178620.resp,https://service.iris.edu/irisws/resp/1/query?net=BK&sta=MHC&loc=--&cha=BHZ&time=1993-034T00.00.00
+./src/test/resources/gov/llnl/gnem/jsac/commands/transfer/2013.148.00.YAK.BHZ.00.6733538.resp,https://service.iris.edu/irisws/resp/1/query?net=IU&sta=YAK&loc=00&cha=BHZ&starttime=2013-05-28T00:00:00&endtime=2599-12-31T23:59:59
+./src/test/resources/gov/llnl/gnem/jsac/commands/transfer/fgseis.sac,funcgen seismogram synthetic
+./src/test/resources/gov/llnl/gnem/jsac/commands/transfer/from_css_pazfir.sac,pazfir transferred version of seismogram.sac
+./src/test/resources/gov/llnl/gnem/jsac/commands/transfer/impulse_delta_0.01_npts_10000.sac,funcgen impulse
+./src/test/resources/gov/llnl/gnem/jsac/commands/transfer/impulse_sacpzf.sac,funcgen impulse transferred by pole-zero
+./src/test/resources/gov/llnl/gnem/jsac/commands/transfer/MHC_BHZ_evresp.sac,https://ds.iris.edu/mda/BK/
+./src/test/resources/gov/llnl/gnem/jsac/commands/transfer/SAC_PZs_IU_YAK_BHZ_00_.pzf,https://service.iris.edu/irisws/sacpz/1/query?net=IU&sta=YAK&loc=00&cha=BHZ&starttime=2013-05-28T00:00:00&endtime=2599-12-31T23:59:59
+./src/test/resources/gov/llnl/gnem/jsac/commands/transfer/seis_transferred_to_vel.sac,velocity version of seismogram.sac
+./src/test/resources/gov/llnl/gnem/jsac/commands/transfer/trans_dbase_evresp_input.sac,https://ds.iris.edu/mda/BK/
+./src/test/resources/gov/llnl/gnem/jsac/commands/transfer/trans_test_to_acc_truth.sac,https://ds.iris.edu/mda/IU/
+./src/test/resources/gov/llnl/gnem/jsac/commands/transfer/trans_test_to_vel_input.sac,https://ds.iris.edu/mda/IU/
+./src/test/resources/gov/llnl/gnem/jsac/commands/transfer/trans_test_to_vel_truth.sac,https://ds.iris.edu/mda/IU/
+./src/test/resources/gov/llnl/gnem/jsac/commands/triangle.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/absTruth.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/add2truth.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/add5truth.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/dif2truth.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/dif3truth.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/dif5truth.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/difTruth.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/div1truth.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/div3truth.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/exp10Truth.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/expTruth.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/intRectTruth.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/intTruth.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/log10Add1Truth.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/logAdd1Truth.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/logTruth.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/mul1truth.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/mul2truth.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/sqrTruth.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/sqrtTruth.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/sub1truth.sac,"Generated from ""funcgen triangle"" in SAC"
+./src/test/resources/gov/llnl/gnem/jsac/commands/unary/sub2truth.sac,"Generated from ""funcgen triangle"" in SAC"
